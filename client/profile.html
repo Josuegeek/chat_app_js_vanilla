@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="block-center">
+    <header>
+        <div class="flex row justify-between black">
+            <a class="flex row items-center pad blue" href="./">
+                <img src="imgs/fluent--chat-12-filled.png" class="small-img" alt="">
+                <b>CHATwithISWA</b>
+            </a>
+            <a class="black pad" href="profile.html">
+                <div class="flex row items-center gap">
+                    <p>Josué Iswa</p>
+                    <img class="small-img" src="imgs/mingcute--user-4-fill.png" alt="user image">
+                </div>
+            </a>
+        </div>
+        <div class="nav flex row justify-center gap">
+            <a class="flex items-center row" href="index.html">
+                <img class="small-img" src="imgs/ic--baseline-home.png" alt="option">
+                <p>Accueil</p>
+            </a>
+            <a class="items-center flex row" href="chat.html">
+                <img class="small-img" src="imgs/fluent--chat-24-filled.png" alt="option">
+                <p>Messages</p>
+                <p id="unread-msg" class="flex row justify-center items-center unread radius-100">
+                    2
+                </p>
+            </a>
+        </div>
+    </header>
+    <div class="flex column rounded bg-white-t items-center mar mini-profile-card block-center">
+        <label class="couverture-container" for="couverture">
+            <img id="couverture-preview" src="./imgs/back2.jpg" class="flex justify-center items-center bg-couverture pointer" alt="couverture">
+        </label>
+        <label for="profile" id="profile-img-container" class="flex items-center">
+            <img id="profile-preview" class="profile-img bg-white radius-100 pointer" src="./imgs/mingcute--user-4-fill.png" alt="profile img">
+            <img class="small-img bg-blue radius-100 pad pointer" src="./imgs/mynaui--edit-solid.png" alt="edit-icon">
+        </label>
+        <div class="flex column mar items-center pad">
+            <b>Josué Iswa</b>
+            <p>iswajosuepro@gmail.com</p>
+            <p class="pad text-center">Tout ce que vous voulez pour mettre dans votre bio</p>
+        </div>
+        <a href="index.html" class="rounded pointer bg-blue white mar pad">retour à l'accueil</a>
+        <button class="bg-red mar rounded white pointer">Se déconecter</button>
+    </div>
+    <form class="invisible" action="">
+        <input type="file" name="profile" id="profile" accept="image/*">
+        <input type="file" name="couverture" id="couverture" accept="image/*">
+    </form>
+    <footer class="flex bg-blue white justify-center">
+        <div class="flex column items-center">
+            <b>contact-me</b>
+            <div class="flex row gap">
+                <a href="mailto:iswajosuepro@gmail.com">iswajosuepro@gmail.com</a>
+                <p>+243 816 332 364</p>
+            </div>
+            <p class="mar">Developpé avec amour par @Iswa Josué</p>
+        </div>
+    </footer>
+</body>
+</html>

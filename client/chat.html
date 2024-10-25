@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <div class="flex row justify-between black">
+            <a class="flex row items-center pad blue" href="./">
+                <img src="imgs/fluent--chat-12-filled.png" class="small-img" alt="">
+                <b>CHATwithISWA</b>
+            </a>
+            <a class="black pad" href="profile.html">
+                <div class="flex row items-center gap">
+                    <p>Josué Iswa</p>
+                    <img class="small-img" src="imgs/mingcute--user-4-fill.png" alt="user image">
+                </div>
+            </a>
+        </div>
+        <div class="nav flex row justify-center gap">
+            <a class="flex items-center row" href="index.html">
+                <img class="small-img" src="imgs/ic--baseline-home.png" alt="option">
+                <p>Accueil</p>
+            </a>
+            <a class="items-center flex row" href="chat.html">
+                <img class="small-img" src="imgs/fluent--chat-24-filled.png" alt="option">
+                <p>Messages</p>
+                <p id="unread-msg" class="flex row justify-center items-center unread radius-100">2</p>
+            </a>
+        </div>
+    </header>
+
+    <div class="conversations rounded bg-white mar flex gap row border-blue pad block-center">
+        <div id="conversations-list" class="flex column gap ">
+            <form class="flex row gap items-center">
+                <input class="rounded" id="find-user-input" type="text">
+                <button id="search-btn" class="flex justify-center search-btn bg-blue radius-100 pad-0 pointer">
+                    <img class="small-img pad" src="imgs/lets-icons--search-fill.png" alt="search">
+                </button>
+            </form>
+            <div class="msg-card rounded pointer pad">
+                <div class="flex row items-center gap justify-between">
+                    <div class="flex row items-center gap">
+                        <img class="img-header" src="imgs/mingcute--user-4-fill.png" alt="user profile">
+                        <div class="flex column">
+                            <div>
+                                <b>Josué Iswa</b>
+                            </div>
+                            <p>mon bio</p>
+                        </div>
+                    </div>
+                    <div class="pad white radius-100 bg-blue">2</div>
+                </div>
+            </div>
+            <div class="msg-card rounded pointer pad">
+                <div class="flex row items-center gap justify-between">
+                    <div class="flex row items-center gap">
+                        <img class="img-header" src="imgs/mingcute--user-4-fill.png" alt="user profile">
+                        <div class="flex column">
+                            <div>
+                                <b>Josué Iswa</b>
+                            </div>
+                            <p>mon bio</p>
+                        </div>
+                    </div>
+                    <div class="pad white radius-100 bg-blue">2</div>
+                </div>
+            </div>
+            <div class="msg-card rounded pointer pad">
+                <div class="flex row items-center gap justify-between">
+                    <div class="flex row items-center gap">
+                        <img class="img-header" src="imgs/mingcute--user-4-fill.png" alt="user profile">
+                        <div class="flex column">
+                            <div>
+                                <b>Josué Iswa</b>
+                            </div>
+                            <p>mon bio</p>
+                        </div>
+                    </div>
+                    <div class="pad radius-100 white bg-blue">1</div>
+                </div>
+            </div>
+            <div class="msg-card rounded pointer pad">
+                <div class="flex row items-center gap justify-between">
+                    <div class="flex row items-center gap">
+                        <img class="img-header" src="imgs/mingcute--user-4-fill.png" alt="user profile">
+                        <div class="flex column">
+                            <div>
+                                <b>Josué Iswa</b>
+                            </div>
+                            <p>mon bio</p>
+                        </div>
+                    </div>
+                    <div class="pad radius-100 bg-blue white">4</div>
+                </div>
+            </div>
+        </div>
+        <div id="msg-container" class="flex column space-between w-100 bg-blue-t pad rounded">
+            <div class="flex gap items-center">
+                <button id="back-msg-list" class="bg-white blue w-fit rounded pointer invisible">Retour</button>
+                <b class="pad" id="selectedConversationName"></b>
+            </div>
+            
+            <div id="messages" class="flex column gap flex-grow pad mar ">
+                <div class="flex row justify-right author-msg">
+                    <div class="author-msg-content bg-blue-t">
+                        <p>Bonjour</p>
+                    </div>
+                    <img class="img-header" src="imgs/mingcute--user-4-fill.png" alt="user profile">
+                </div>
+                <div class="flex row justify-left guest-msg">
+                    <img class="img-header" src="imgs/mingcute--user-4-fill.png" alt="user profile">
+                    <div class="guest-msg-content bg-blue white">
+                        <p>Bonjour comment vas-tu?</p>
+                    </div>
+                </div>
+                <div class="flex row justify-right author-msg">
+                    <div class="author-msg-content bg-blue-t">
+                        <p>ça va très bien et toi?</p>
+                    </div>
+                    <img class="img-header" src="imgs/mingcute--user-4-fill.png" alt="user profile">
+                </div>
+                <div class="flex row justify-right author-msg">
+                    <div class="author-msg-content bg-blue-t">
+                        <p>Je voulais te voir, t'es où?</p>
+                    </div>
+                    <img class="img-header" src="imgs/mingcute--user-4-fill.png" alt="user profile">
+                </div>
+                <div class="flex row justify-left guest-msg">
+                    <img class="img-header" src="imgs/mingcute--user-4-fill.png" alt="user profile">
+                    <div class="guest-msg-content bg-blue white">
+                        <p>J'ai déjà voyagé, maintenant je suis à paris, pourquoi tu me cherche ?</p>
+                    </div>
+                </div>  
+                <div class="flex row justify-right author-msg">
+                    <div class="author-msg-content bg-blue-t">
+                        <p>Ouf! je voulais m'excuser, je n'avais pas bien réagit l'autre fois :(</p>
+                    </div>
+                    <img class="img-header" src="imgs/mingcute--user-4-fill.png" alt="user profile">
+                </div>
+            </div>
+            <div class="flex row items-center gap">
+                <textarea class="rounded w-100 pad msg-area"  name="message" id="message" rows="3"></textarea>
+                <button id="btn-send" class="radius-100 pointer">
+                    <img class="img-header block-center" src="imgs/mdi--send-circle.png" alt="search">
+                </button>     
+            </div>
+        </div>
+    </div>
+
+    <footer class="flex bg-blue white justify-center">
+        <div class="flex column items-center">
+            <b>contact-me</b>
+            <div class="flex row gap">
+                <a href="mailto:iswajosuepro@gmail.com">iswajosuepro@gmail.com</a>
+                <p>+243 816 332 364</p>
+            </div>
+            <p class="mar">Developpé avec amour par @Iswa Josué</p>
+        </div>
+    </footer>
+
+    <script src="./js/chat.js"></script>
+</body>
+</html>

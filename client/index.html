@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messagerie</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <div class="flex row justify-between black">
+            <a class="flex row items-center pad blue" href="./">
+                <img src="imgs/fluent--chat-12-filled.png" class="small-img" alt="">
+                <b>CHATwithISWA</b>
+            </a>
+            <a class="black pad" href="profile.html">
+                <div class="flex row items-center gap">
+                    <p>Josué Iswa</p>
+                    <img class="small-img" src="imgs/mingcute--user-4-fill.png" alt="user image">
+                </div>
+            </a>
+        </div>
+        <div class="nav flex row justify-center gap">
+            <a class="flex items-center row" href="index.html">
+                <img class="small-img" src="imgs/ic--baseline-home.png" alt="option">
+                <p>Accueil</p>
+            </a>
+            <a class="items-center flex row" href="chat.html">
+                <img class="small-img" src="imgs/fluent--chat-24-filled.png" alt="option">
+                <p>Messages</p>
+                <p id="unread-msg" class="flex row justify-center items-center unread radius-100">
+                    2
+                </p>
+            </a>
+        </div>
+    </header>
+    <main class="flex column h-100 h-100 items-center pad gap">
+        <h1>Découvrez vos amis qui sont sur ce réseau</h1>
+        <div id="users-list" class="flex column gap rounded bg-white">
+            <form class="flex row gap items-center">
+                <label for="find-user-input">Search :</label>
+                <input class="rounded" id="find-user-input" type="text">
+                <div class="flex justify-center search-btn bg-blue radius-100 pointer">
+                    <img class="small-img" src="imgs/lets-icons--search-fill.png" alt="search">
+                </div>
+            </form>
+            <div class="user-card rounded pointer pad">
+                <div class="flex row items-center gap justify-between">
+                    <a class="flex row items-center gap" href="profile.html?userid=1">
+                        <img class="img-header" src="imgs/mingcute--user-4-fill.png" alt="user profile">
+                        <div class="flex column">
+                            <div>
+                                <b>Josué Iswa</b>
+                            </div>
+                            <p>mon bio</p>
+                        </div>
+                        <div class="pad bg-green radius-100"></div>
+                    </a>
+                    <a href="chat.html?user=dj"><img class="small-img" src="imgs/fluent--chat-12-filled.png" alt="chat img"></a>
+                </div>
+            </div>
+            <div class="user-card rounded pointer pad">
+                <div class="flex row items-center gap justify-between">
+                    <a class="flex row items-center gap" href="profile.html?userid=1">
+                        <img class="img-header" src="imgs/mingcute--user-4-fill.png" alt="user profile">
+                        <div class="flex column">
+                            <div>
+                                <b>Josué Iswa</b>
+                            </div>
+                            <p>mon bio</p>
+                        </div>
+                        <div class="pad bg-green radius-100"></div>
+                    </a>
+                    <a href="chat.html?user=dj"><img class="small-img" src="imgs/fluent--chat-12-filled.png" alt="chat img"></a>
+                </div>
+            </div>
+            <div class="user-card rounded pointer pad">
+                <div class="flex row items-center gap justify-between">
+                    <a class="flex row items-center gap" href="profile.html?userid=1">
+                        <img class="img-header" src="imgs/mingcute--user-4-fill.png" alt="user profile">
+                        <div class="flex column">
+                            <div>
+                                <b>Josué Iswa</b>
+                            </div>
+                            <p>mon bio</p>
+                        </div>
+                    </a>
+                    <a href="chat.html?user=dj"><img class="small-img" src="imgs/fluent--chat-12-filled.png" alt="chat img"></a>
+                </div>
+            </div>
+            <div class="user-card rounded pointer pad">
+                <div class="flex row items-center gap justify-between">
+                    <a class="flex row items-center gap" href="profile.html?userid=1">
+                        <img class="img-header" src="imgs/mingcute--user-4-fill.png" alt="user profile">
+                        <div class="flex column">
+                            <div>
+                                <b>Josué Iswa</b>
+                            </div>
+                            <p>mon bio</p>
+                        </div>
+                    </a>
+                    <a href="chat.html?user=dj"><img class="small-img" src="imgs/fluent--chat-12-filled.png" alt="chat img"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="flex bg-blue white justify-center">
+        <div class="flex column items-center">
+            <b>contact-me</b>
+            <div class="flex row gap">
+                <a href="mailto:iswajosuepro@gmail.com">iswajosuepro@gmail.com</a>
+                <p>+243 816 332 364</p>
+            </div>
+            <p class="mar">Developpé avec amour par @Iswa Josué</p>
+        </div>
+    </footer>
+</body>
+</html>

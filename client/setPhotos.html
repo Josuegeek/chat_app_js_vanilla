@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectionner une photo</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="bg-img w-screen h-screen flex column items-center gap justify-center">
+        <h1 class="bg-white-t rounded pad">Ajoutez votre photo de profil et de couverture</h1>
+        <div class="flex column rounded bg-white-t mini-profile-card items-center mar">
+            <label class="couverture-container" for="couverture">
+                <img id="couverture-preview" src="./imgs/bck ciel.jpg" class="flex justify-center items-center bg-couverture pointer" alt="couverture">
+            </label>
+            <label for="profile" id="profile-img-container" class="flex items-center">
+                <img id="profile-preview" class="profile-img bg-white radius-100 pointer" src="./imgs/mingcute--user-4-fill.png" alt="profile img">
+                <img class="small-img bg-blue radius-100 pad pointer" src="./imgs/mynaui--edit-solid.png" alt="edit-icon">
+            </label>
+            <div class="flex column mar items-center pad">
+                <b id="username">Josué Iswa</b>
+                <p id="email">iswajosuepro@gmail.com</p>
+                <p id="bio" class="pad text-center">Tout ce que vous voulez pour mettre dans votre bio</p>
+            </div>
+        </div>
+        <form id="images-form" action="" enctype="multipart/form-data">
+            <div class="invisible">
+                <input type="file" name="profile" id="profile" accept="image/*">
+                <input type="file" name="couverture" id="couverture" accept="image/*">
+            </div>
+            <button id="btn-next" class="rounded pointer bg-blue white mar">Aller à l'accueil</button>
+        </form>
+    </div>
+    <script type="module" src="./js/setPhotos.js"></script>
+</body>
+</html>
